@@ -3,11 +3,11 @@
   requirement: |
     Пользователь попадает на страницу с товарами
   prerequisites: |
-    -
+    Открыть браузер
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps:
-    - вводим адрес
+    вводим адрес
   expected-result: |
     Пользователь должен попасть на главную страницу
 
@@ -18,10 +18,10 @@
   prerequisites:
     Открыта страница магазина
   test-data: |
-    - https://hexlet-products-store.vercel.app/
+    https://hexlet-products-store.vercel.app/
   steps:
-    - Выбираем Language
-    - Выбираем Russian
+    Выбираем Language
+    Выбираем Russian
   expected-result: |
     Страница должна быть адаптирована под русский язык
 
@@ -32,10 +32,10 @@
   prerequisites:
     Открыта страница магазина
   test-data: |
-    - https://hexlet-products-store.vercel.app/
+    https://hexlet-products-store.vercel.app/
   steps:
-    - Находим первый товар
-    - Добавляем в корзину через Add to cart
+    Находим первый товар
+    Добавляем в корзину через Add to cart
   expected-result: |
     В правом верхнем углу отображение количества добавленных товаров Cart (1)
 
@@ -44,14 +44,13 @@
   requirement: |
     Корректное отображение товара в корзине
   prerequisites:
-    - Открыта страница магазина
-    - Товар добавлен в корзину
+    Открыта страница магазина
+    Товар добавлен в корзину
   test-data: |
-    - https://hexlet-products-store.vercel.app/
-    - Добавить первый товар ипхоне 9к turbo
+    https://hexlet-products-store.vercel.app/
+    Добавить первый товар ипхоне 9к turbo
   steps:
-    - В правом верхнем углу выбираем cart
-    - Добавляем в корзину через Add to cart
+    В правом верхнем углу выбираем cart
+    Добавляем в корзину через Add to cart
   expected-result: |
-    - Товар ипхоне 9к turbo в корзине
-    
+    Товар ипхоне 9к turbo в корзине
