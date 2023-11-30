@@ -1,0 +1,13 @@
+---
+- summary: |
+    Мультиязычность
+  environment: |
+    Yandex Browser Версия 23.11.0.2383 (64-bit)
+    OS Windows 11 22H2 22621.2715
+  steps-to-reproduce: |
+    Выбираем Language в правом углу
+    Выбираем Russian
+  expected-result: |
+    Полное отображение русского языка
+  actual-result: |
+    Частичный перевод на русский язык
