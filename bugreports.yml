@@ -10,4 +10,64 @@
   expected-result: |
     Полное отображение русского языка
   actual-result: |
-    Частичный перевод на русский язык
+    Нет перевода в карточках товара
+
+- summary: |
+    Мультиязычность - иконка
+  environment: |
+    Yandex Browser Версия 23.11.0.2383 (64-bit)
+    OS Windows 11 22H2 22621.2715
+  steps-to-reproduce: |
+    Выбираем Language в правом углу
+  expected-result: |
+    Отображение флага USA and Russia
+  actual-result: |
+   Отображение только флага Russia
+
+- summary: |
+    Поиск товаров
+  environment: |
+    Yandex Browser Версия 23.11.0.2383 (64-bit)
+    OS Windows 11 22H2 22621.2715
+  steps-to-reproduce: |
+    Вводим в поиск бренд Apple
+  expected-result: |
+    Отображение товаров Apple
+  actual-result: |
+   Ничего не найдено!
+
+- summary: |
+    Поиск товаров
+  environment: |
+    Yandex Browser Версия 23.11.0.2383 (64-bit)
+    OS Windows 11 22H2 22621.2715
+  steps-to-reproduce: |
+    Вводим в поиск бренд Apple
+  expected-result: |
+    Отображение товаров Apple
+  actual-result: |
+   Ничего не найдено! 
+
+- summary: |
+    Поиск товаров
+  environment: |
+    Yandex Browser Версия 23.11.0.2383 (64-bit)
+    OS Windows 11 22H2 22621.2715
+  steps-to-reproduce: |
+    Вводим в поиск бренд Impression of Acqua Di Gio
+  expected-result: |
+    Отображение товаров Impression of Acqua Di Gio
+  actual-result: |
+   Ничего не найдено! 
+
+ - summary: |
+    Поиск товаров
+  environment: |
+    Yandex Browser Версия 23.11.0.2383 (64-bit)
+    OS Windows 11 22H2 22621.2715
+  steps-to-reproduce: |
+    Поиск товаров по названию бренда
+  expected-result: |
+    Успешный поиск по названию бренда
+  actual-result: |
+   Ничего не найдено! Система берет название только из шапки названия  
