@@ -1,32 +1,33 @@
 test-cases:
   - summary: |
-      Мультиязычность
+      Не переводится язык в карточке товара на русской локализации
     status: fail
 
   - summary: |
-      Мультиязычность - иконка
+      В меню Выбор языков не отображается иконка флага
     status: pass
     
   - summary: |
-      Поиск товаров
+      Order placed successfully - 500 Internal Server Error
     status: fail
 
   - summary: |
-      Поиск товаров
-    status: fail
+      Искаженное изображение в превью товара Handcraft Chinese style
+    status: pass
 
 bugreports:
   - summary: |
-      Поиск товаров
+      Лишнее изображение в карточке товара Handcraft Chinese style
     environment: |
       Yandex Browser Версия 23.11.0.2383 (64-bit)
       OS Windows 11 22H2 22621.2715
     steps-to-reproduce: |
-      В поисковой строке ввести название бренда, которого нет в шапке названия
+      В категориях выбираем luxury palace
+      Выбираем Handcraft Chinese style
     expected-result: |
-      Отображение товаров бренда или Ничего не найдено
+      Правильное отображение товара
     actual-result: |
-      Отображение всех файлов в каталоге
+      Лишнее изображение в карточке см. скрин Handcraft Chinese style v2.png
 
   - summary: |
       Карточка товара OPPO
@@ -34,8 +35,8 @@ bugreports:
       Yandex Browser Версия 23.11.0.2383 (64-bit)
       OS Windows 11 22H2 22621.2715
     steps-to-reproduce: |
-      В левом меню выбрать бренд OPPO
+      В категориях выбираем OPPO
     expected-result: |
       Корректное отображение карточки товара OPPO
     actual-result: |
-      Некорректное отображение карточки OPPO. Сжатые рамки, съехавший текст
+      Некорректное отображение карточки OPPO. Сжатые рамки, съехавший текст см. скрин OPPO.png
