@@ -60,7 +60,7 @@
   actual-result: |
     Ничего не найдено! 
 
- - summary: |
+- summary: |
     Поиск товаров
   environment: |
     Yandex Browser Версия 23.11.0.2383 (64-bit)
