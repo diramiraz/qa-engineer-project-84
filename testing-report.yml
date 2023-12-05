@@ -1,15 +1,15 @@
 - summary: |
-    Открытие интернет-магазина
-  status: pass
-  
-- summary: |
-    Проверка мульти-язычности
+    Не переводится язык в карточке товара на русской локализации
   status: fail
   
 - summary: |
-    Проверка добавления товаров в корзину
-  status: pass
+    В меню Выбор языков не отображается иконка флага
+  status: fail
   
 - summary: |
-     Корректное отображение товара в корзине
-  status: pass
+    Order placed successfully - 500 Internal Server Error
+  status: fail
+  
+- summary: |
+     Искаженное изображение в превью товара Handcraft Chinese style
+  status: fail
