@@ -35,4 +35,17 @@
   expected-result: |
     Успешное оформление заказа
   actual-result: |
-   Order placed successfully - Devtools 500 Internal Server Error см. скрин Order placed successfully
+   Order placed successfully - Devtools 500 Internal Server Error см. скрин Order placed successfully.png
+
+- summary: |
+    Искаженное изображение в превью товара Handcraft Chinese style
+  environment: |
+    Yandex Browser Версия 23.11.0.2383 (64-bit)
+    OS Windows 11 22H2 22621.2715
+  steps-to-reproduce: |
+    В категории товаров выбираем luxury palace
+    Оформляем заказ
+  expected-result: |
+    Корректное отображение превью товара luxury palace
+  actual-result: |
+   Искаженное изображение в превью товара Handcraft Chinese style см. скрин Handcraft Chinese style.png
