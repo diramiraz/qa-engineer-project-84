@@ -1,56 +1,68 @@
 - summary: |
-    Открытие интернет-магазина
-  requirement: |
-    Пользователь попадает на страницу с товарами
-  prerequisites: |
-    Открыть браузер
-  test-data: |
-    https://hexlet-products-store.vercel.app/
-  steps:
-    - вводим адрес
-  expected-result: |
-    Пользователь должен попасть на главную страницу
-
-- summary: |
-    Проверка мульти-язычности
+    Проверка смены языка на русский
   requirement: |
     Сменя языка с Eng на Ru
   prerequisites:
-    Открыта страница магазина
+    no data
   test-data: |
-    https://hexlet-products-store.vercel.app/
+    no data
   steps:
     - Выбираем Language
     - Выбираем Russian
   expected-result: |
-    Страница должна быть адаптирована под русский язык
+    Язык сайта меняется на русский
 
 - summary: |
     Проверка добавления товаров в корзину
   requirement: |
     Товар добавляется в корзину
   prerequisites:
-    Открыта страница магазина
+    no data
   test-data: |
-    https://hexlet-products-store.vercel.app/
+    no data
   steps:
-    - Находим первый товар
-    - Добавляем в корзину через Add to cart
+    - Выбираем в каталоге любой товар
+    - Добавляем товар в корзину
   expected-result: |
-    В правом верхнем углу отображение количества добавленных товаров Cart (1)
+    Товар успешно добавлен и отображается в корзине
 
 - summary: |
     Корзина
   requirement: |
     Корректное отображение товара в корзине
   prerequisites:
-    Открыта страница магазина
-    Товар добавлен в корзину
+    no data
   test-data: |
-    https://hexlet-products-store.vercel.app/
-    Добавить первый товар ипхоне 9к turbo
+    no data
   steps:
-    - В правом верхнем углу выбираем cart
-    - Добавляем в корзину через Add to cart
+    - Добавить первый товар в корзину
   expected-result: |
-    Товар ипхоне 9к turbo в корзине
+    Товар в корзине
+
+- summary: |
+    Корзина
+  requirement: |
+    Открыть корзину
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - Открыть корзину
+  expected-result: |
+    Открыта корзина
+
+- summary: |
+    Корзина
+  requirement: |
+    Очистить корзину от товара
+  prerequisites:
+    Добавить любой товар в корзину
+  test-data: |
+    no data
+  steps:
+    - Добавить товар в корзину
+    - Открыть корзину
+    - Очистить корзину
+  expected-result: |
+    Корзина пуста
