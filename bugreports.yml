@@ -1,6 +1,6 @@
 ---
 - summary: |
-    Мультиязычность
+    Не переводится язык в карточке товара на русской локализации
   environment: |
     Yandex Browser Версия 23.11.0.2383 (64-bit)
     OS Windows 11 22H2 22621.2715
@@ -10,10 +10,10 @@
   expected-result: |
     Полное отображение русского языка
   actual-result: |
-    Нет перевода в карточках товара
+    Не переводится язык в карточках товаров на русской локализации
 
 - summary: |
-    Мультиязычность - иконка
+    В меню Выбор языков не отображается иконка флага
   environment: |
     Yandex Browser Версия 23.11.0.2383 (64-bit)
     OS Windows 11 22H2 22621.2715
@@ -25,49 +25,14 @@
    Отображение только флага Russia
 
 - summary: |
-    Поиск товаров
+    Order placed successfully - 500 Internal Server Error
   environment: |
     Yandex Browser Версия 23.11.0.2383 (64-bit)
     OS Windows 11 22H2 22621.2715
   steps-to-reproduce: |
-    Вводим в поиск бренд Apple
+    Добавляем первый товар в корзину
+    Оформляем заказ
   expected-result: |
-    Отображение товаров Apple
+    Успешное оформление заказа
   actual-result: |
-    Ничего не найдено!
-
-- summary: |
-    Поиск товаров
-  environment: |
-    Yandex Browser Версия 23.11.0.2383 (64-bit)
-    OS Windows 11 22H2 22621.2715
-  steps-to-reproduce: |
-    Вводим в поиск бренд Apple
-  expected-result: |
-    Отображение товаров Apple
-  actual-result: |
-    Ничего не найдено! 
-
-- summary: |
-    Поиск товаров
-  environment: |
-    Yandex Browser Версия 23.11.0.2383 (64-bit)
-    OS Windows 11 22H2 22621.2715
-  steps-to-reproduce: |
-    Вводим в поиск бренд Impression of Acqua Di Gio
-  expected-result: |
-    Отображение товаров Impression of Acqua Di Gio
-  actual-result: |
-    Ничего не найдено! 
-
-- summary: |
-    Поиск товаров
-  environment: |
-    Yandex Browser Версия 23.11.0.2383 (64-bit)
-    OS Windows 11 22H2 22621.2715
-  steps-to-reproduce: |
-    Поиск товаров по названию бренда
-  expected-result: |
-    Успешный поиск по названию бренда
-  actual-result: |
-    Ничего не найдено! Система берет название только из шапки названия  
+   Order placed successfully - Devtools 500 Internal Server Error см. скрин Order placed successfully
