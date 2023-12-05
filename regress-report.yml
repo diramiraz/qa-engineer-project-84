@@ -1,41 +1,41 @@
 test-cases:
 - summary: |
       Мультиязычность
-    status: fail
+  status: fail
 
 - summary: |
       Мультиязычность - иконка
-    status: pass
+  status: pass
     
 - summary: |
       Поиск товаров
-    status: fail
+  status: fail
 
 - summary: |
       Поиск товаров
-    status: fail
+  status: fail
 
 bugreports:
 - summary: |
       Поиск товаров
-    environment: |
+  environment: |
       Yandex Browser Версия 23.11.0.2383 (64-bit)
       OS Windows 11 22H2 22621.2715
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       В поисковой строке ввести название бренда, которого нет в шапке названия
-    expected-result: |
+  expected-result: |
       Отображение товаров бренда или Ничего не найдено
-    actual-result: |
+  actual-result: |
       Отображение всех файлов в каталоге
 
-  - summary: |
+- summary: |
       Карточка товара OPPO
-    environment: |
+  environment: |
       Yandex Browser Версия 23.11.0.2383 (64-bit)
       OS Windows 11 22H2 22621.2715
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       В левом меню выбрать бренд OPPO
-    expected-result: |
+  expected-result: |
       Корректное отображение карточки товара OPPO
-    actual-result: |
+  actual-result: |
       Некорректное отображение карточки OPPO. Сжатые рамки, съехавший текст
