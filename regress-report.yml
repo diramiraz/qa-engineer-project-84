@@ -1,22 +1,22 @@
 test-cases:
-- summary: |
+  - summary: |
       Мультиязычность
   status: fail
 
-- summary: |
+  - summary: |
       Мультиязычность - иконка
   status: pass
     
-- summary: |
+  - summary: |
       Поиск товаров
   status: fail
 
-- summary: |
+  - summary: |
       Поиск товаров
   status: fail
 
 bugreports:
-- summary: |
+  - summary: |
       Поиск товаров
   environment: |
       Yandex Browser Версия 23.11.0.2383 (64-bit)
@@ -28,7 +28,7 @@ bugreports:
   actual-result: |
       Отображение всех файлов в каталоге
 
-- summary: |
+  - summary: |
       Карточка товара OPPO
   environment: |
       Yandex Browser Версия 23.11.0.2383 (64-bit)
