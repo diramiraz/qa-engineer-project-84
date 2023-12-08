@@ -7,7 +7,7 @@
   status: fail
   
 - summary: |
-    Order placed successfully - 500 Internal Server Error
+    Ошибка 500 при оформлении заказа
   status: fail
   
 - summary: |
