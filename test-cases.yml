@@ -27,42 +27,82 @@
     Товар успешно добавлен и отображается в корзине
 
 - summary: |
-    Корзина
-  requirement: |
-    Корректное отображение товара в корзине
-  prerequisites:
-    no data
-  test-data: |
-    no data
-  steps:
-    - Добавить первый товар в корзину
-  expected-result: |
-    Товар в корзине
-
-- summary: |
-    Корзина
-  requirement: |
-    Открыть корзину
-  prerequisites:
-    no data
-  test-data: |
-    no data
-  steps:
-    - Открыть корзину
-  expected-result: |
-    Открыта корзина
-
-- summary: |
-    Корзина
+    Очистка корзины
   requirement: |
     Очистить корзину от товара
   prerequisites:
-    Добавить любой товар в корзину
+    У пользователя должен быть добавлен хотябы один товар в корзину
   test-data: |
     no data
   steps:
-    - Добавить товар в корзину
     - Открыть корзину
-    - Очистить корзину
+    - Нажать кнопку "очистить корзину"
   expected-result: |
     Корзина пуста
+
+- summary: |
+    Фильтрация по ключевому слову
+  requirement: |
+    Поиск товара по ключевым словам
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левой строке Search вводим Brown
+  expected-result: |
+    Отображается карточка товара Brown Perfume
+
+- summary: |
+    Фильтрация по категориям
+  requirement: |
+    Поиск товара по категориям
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левом блоке выбираем Dermive
+  expected-result: |
+    Отображается карточка товара Oil Free Moisturizer 100ml
+
+- summary: |
+    Фильтрация по цене
+  requirement: |
+    Поиск товара по цене
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левом блоке выбираем вводим значение min 445 max 736
+  expected-result: |
+    Отображаются товары в граничных значениях 445-746
+
+- summary: |
+    Фильтрация наличия In Stock
+  requirement: |
+    Поиск товара не в галичии
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левом блоке убираем галочку In Stock
+  expected-result: |
+    Отображаются товары, которых сейчас нет в наличии
+
+- summary: |
+    Поиск товара по хештегу
+  requirement: |
+    Тоары по хештегу
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - Выбираем любой товар
+    - Над названием товара жемем в хештег
+  expected-result: |
+    Отображаются товары по хештегу
+
