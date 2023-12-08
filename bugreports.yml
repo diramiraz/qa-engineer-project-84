@@ -25,7 +25,7 @@
    Отображение только флага Russia
 
 - summary: |
-    Order placed successfully - 500 Internal Server Error
+    Ошибка 500 при оформлении заказа
   environment: |
     Yandex Browser Версия 23.11.0.2383 (64-bit)
     OS Windows 11 22H2 22621.2715
