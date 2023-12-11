@@ -27,7 +27,7 @@ bugreports:
     expected-result: |
       Правильное отображение товара
     actual-result: |
-      Лишнее изображение в карточке см. скрин Handcraft Chinese style v2.png
+      Лишнее изображение в карточке см. скрин Handcraft Chinese style v2.png в папке Screenshots
 
   - summary: |
       Карточка товара OPPO
@@ -39,4 +39,4 @@ bugreports:
     expected-result: |
       Корректное отображение карточки товара OPPO
     actual-result: |
-      Некорректное отображение карточки OPPO. Сжатые рамки, съехавший текст см. скрин OPPO.png
+      Некорректное отображение карточки OPPO. Сжатые рамки, съехавший текст см. скрин OPPO.png в папке Screenshots
