@@ -1,0 +1,109 @@
+- summary: |
+    Проверка смены языка на русский
+  requirement: |
+    Сменя языка с Eng на Ru
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - Выбираем Language
+    - Выбираем Russian
+  expected-result: |
+    Язык сайта меняется на русский
+
+- summary: |
+    Проверка добавления товаров в корзину
+  requirement: |
+    Товар добавляется в корзину
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - Выбираем в каталоге любой товар
+    - Добавляем товар в корзину
+    - Открываем корзину Cart
+  expected-result: |
+    Товар успешно добавлен и отображается в корзине
+
+- summary: |
+    Очистка корзины
+  requirement: |
+    Очистить корзину от товара
+  prerequisites:
+    У пользователя должен быть добавлен хотябы один товар в корзину
+  test-data: |
+    no data
+  steps:
+    - Открыть корзину
+    - Нажать кнопку "очистить корзину"
+  expected-result: |
+    Корзина пуста
+
+- summary: |
+    Фильтрация по ключевому слову
+  requirement: |
+    Поиск товара по ключевым словам
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левой строке вводим любое слово
+  expected-result: |
+    Отображается товар согласно введенному запросу
+
+- summary: |
+    Фильтрация по категориям
+  requirement: |
+    Поиск товара по категориям
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левом блоке выбираем любой товар
+  expected-result: |
+      Отображается товар согласно выбранной строки
+
+- summary: |
+    Фильтрация по цене
+  requirement: |
+    Поиск товара по цене
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левом нижнем блоке, выбираем любые граничные значения
+  expected-result: |
+    Отображается товар согласно введенному запросу
+
+- summary: |
+    Проверка фильтра In Stock
+  requirement: |
+    Поиск товара не в галичии
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - В левом блоке убираем галочку In Stock
+  expected-result: |
+    Отображаются все товары каталога
+
+- summary: |
+    Проверка фильтра по хештегу
+  requirement: |
+    Тоары по хештегу
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - Выбираем любой товар
+    - Над названием товара жемем в хештег
+  expected-result: |
+    Отображаются товары с выбранным хештегом
+

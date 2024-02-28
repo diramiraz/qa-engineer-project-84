@@ -1,0 +1,15 @@
+- summary: |
+    Не переводится язык в карточке товара на русской локализации
+  status: fail
+  
+- summary: |
+    В меню Выбор языков не отображается иконка флага
+  status: fail
+  
+- summary: |
+    Ошибка 500 при оформлении заказа
+  status: fail
+  
+- summary: |
+     Искаженное изображение в превью товара Handcraft Chinese style
+  status: fail
